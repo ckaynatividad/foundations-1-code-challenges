@@ -50,7 +50,30 @@ Output:
 */
 
 export function organizePricesByKey(arr) {
-    return {};
+    let apple = arr.find(Object=>{
+        return Object.id === 'apple';
+    });
+    let banana = arr.find(Object=>{
+        return Object.id === 'banana';
+    });
+    let dogfood = arr.find(Object=>{
+        return Object.id === 'dog food';
+    });
+    let milk = arr.find(Object=>{
+        return Object.id === 'milk';
+    });
+    let cheese = arr.find(Object=>{
+        return Object.id === 'cheese';
+    });
+    let priceKey = {
+        apple: apple.price,
+        banana: banana.price,
+        'dog food': dogfood.price,
+        milk: milk.price,
+        cheese: cheese.price
+    };
+    //console.log(Object);
+    return priceKey;
 }
 
 /*
@@ -90,7 +113,29 @@ Output:
 */
 
 export function makeAHashMap(arr) {
-    return {};
+    let apple = arr.find(Object=>{
+        return Object.id === 'apple';
+    });
+    let banana = arr.find(Object=>{
+        return Object.id === 'banana';
+    });
+    let dogfood = arr.find(Object=>{
+        return Object.id === 'dog food';
+    });
+    let milk = arr.find(Object=>{
+        return Object.id === 'milk';
+    });
+    let cheese = arr.find(Object=>{
+        return Object.id === 'cheese';
+    });
+    let groceries = {
+        apple: apple,
+        banana: banana,
+        'dog food': dogfood,
+        milk: milk,
+        cheese: cheese,
+    };
+    return groceries;
 }
 
 
@@ -104,5 +149,21 @@ Output:
 */
 
 export function countByCategory(arr) {
-    return {};
+    let fruit = arr.filter(Object => {
+        return Object.category === 'fruit';
+    });
+    let other = arr.filter(Object => {
+        return Object.category === 'other';
+    });
+    let dairy = arr.filter(Object =>{
+        return Object.category === 'dairy';
+    });
+    let arrCount = {
+        fruit: fruit.length,
+        other: other.length,
+        dairy: dairy.length
+    };
+    console.log(fruit);
+    return arrCount;
+
 }
