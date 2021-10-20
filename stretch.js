@@ -163,7 +163,7 @@ export function countByCategory(arr) {
         other: other.length,
         dairy: dairy.length
     };
-    console.log(fruit);
+    //console.log(fruit);
     return arrCount;
 
 }

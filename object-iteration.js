@@ -69,12 +69,5 @@ Output:
 */
 
 export function makeTuples(someObject) {
-    // let tuples = someObject.map(Object =>{
-
-    // return {
-    //     name: Object.name,
-    //     age: Object.age,
-    //     type: Object.type
-    // };
-    // return tuples;
-    }
+    return Object.entries(someObject);
+}
