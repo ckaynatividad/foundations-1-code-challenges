@@ -41,7 +41,7 @@ export function makeArrayWithIsHungry(arr) {
         arrHungry.push({ name: Object.name, isHungry: true, type: Object.type });
     });
     return arrHungry;
-};
+}
 
 /*
 Output:
